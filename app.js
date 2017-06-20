@@ -124,7 +124,32 @@ var beach = new Wedding('beach', false, 'chicken', 25, 'yellow and blue', 4);
 var katysWedding = new Wedding('barn, but a classy one', false, 'fish', 20, 'brown and gold', 9);
 var castleWedding = new Wedding('castle', true, 'chicken and fish', 54, 'silver and pink', 15); 
 var eloping = new Wedding('Venice', true, 'neither', 0, 'none', 0); 
-                               
+ 
+function Cheese(type, name, smells, price, countryOfOrigin) {
+  this.type = type; 
+  this.name = name;
+  this.smells= smells; 
+  this.price = price; 
+  this.countryOfOrigin= countryOfOrigin; 
+}
+
+var cheddar = new Cheese('cheddar', 'Tillamook Cheese Aged Vintage White Cheddar', 'false', '14.99', 'USA'); 
+var paneer = new Cheese('paneer', 'India\'s finest paneer', 'false', '4.29', 'India'); 
+var colby = new Cheese('colby jack', 'McKinnon\'s Colby Cheese Sticks', 'false', '3.57', 'USA'); 
+var bleu = new Cheese('bleu', 'Daisy Farm\'s Dark Blue', 'true', '13.00', 'Canada'); 
+
+function Bath(temperature, howFull, bubbles, extras) {
+  this.temperature = temperature; 
+  this.howFull = howFull; 
+  this.bubbles = bubbles; 
+  this.extras = extras; 
+}
+
+var bubbleBath = new Bath('93 degrees', 'very', 'true', 'vanilla bath salts'); 
+var lavender = new Bath('80 degrees', 'medium', 'false', bathTea: {lemon verbena: 'true', lavender: 'yes', orangeEssence: 'true'}); 
+var generic = new Bath('hot enough', 'meh', 'false', 'none'); 
+
+
 //Practicing Obj Literals//
 var shirt = {
   sleeves: 2, 
@@ -146,4 +171,21 @@ var chicken = {
   baked: false, 
   tasty: true, 
   tasteslike: 'chicken'
+}
+
+var balloons = {
+  red: true, 
+  number: 25, 
+  orderedBy: 'Bob Boberinski',
+  messageToGoWith: 'Happy Birthday Sheryl',
+}
+
+var bouquet = {
+  violets: false, 
+  tulips: true, 
+  daffodils: true, 
+  lilacs: false, 
+  dandelions: false, 
+  babysBreath: false, 
+  irises: true,
 }
